@@ -1,0 +1,11 @@
+{
+  "format": "rowreceipt-contract/1",
+  "dataset": "inventory",
+  "buckets": 64,
+  "fields": [
+    {"name": "sku", "type": "integer"},
+    {"name": "name", "type": "text"},
+    {"name": "stock", "type": "integer"}
+  ],
+  "key": ["sku"]
+}

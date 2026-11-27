@@ -1,0 +1,44 @@
+{
+  "contract": {
+    "format": "rowreceipt-contract/1",
+    "dataset": "portable-fixture",
+    "fields": [
+      {
+        "name": "id",
+        "type": "integer",
+        "nullable": false
+      },
+      {
+        "name": "region",
+        "type": "text",
+        "nullable": false
+      },
+      {
+        "name": "name",
+        "type": "text",
+        "nullable": true
+      }
+    ],
+    "key": [
+      "id",
+      "region"
+    ],
+    "buckets": 16
+  },
+  "key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+  "input": [
+    [
+      1,
+      "east",
+      null
+    ],
+    [
+      -2,
+      "west",
+      "café"
+    ]
+  ],
+  "contract_sha256": "021415d0244f6f873d7d939e56295dd169fb439a184277e055c9bcc7f553a026",
+  "receipt_mac": "ded11bed22773be1a9bda5804136815db536bc321e389e0c95eb8698faa18073",
+  "receipt_sha256": "7742cb7bd9c8f0e2db5a4a9cad8c6c97467038ba81f20320a457154aeed7fbb5"
+}
