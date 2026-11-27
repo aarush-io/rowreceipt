@@ -13,7 +13,7 @@ from rowreceipt import __version__  # noqa: E402
 SOURCE_DIRS = (".github", "benchmarks", "docs", "examples", "rowreceipt", "scripts", "tests")
 SOURCE_FILES = (
     ".gitignore", "CHANGELOG.md", "CODE_OF_CONDUCT.md", "CONTRIBUTING.md", "LICENSE",
-    "README.md", "ROADMAP.md", "SECURITY.md", "pyproject.toml",
+    "README.md", "SECURITY.md", "pyproject.toml",
 )
 
 

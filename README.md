@@ -4,7 +4,7 @@
 
 Run RowReceipt next to your SQLite database and again next to a CSV export. Both sides produce a small authenticated receipt. Compare the receipts offline to catch missing rows, extra rows, or a changed value with the same row count. Use a shared typed contract to match columns even when their names and row order differ.
 
-SQLite's `sqldiff` is useful when both databases are available and you want exact changes. `dbhash` can independently fingerprint SQLite databases. RowReceipt is for separated capture and comparison, including SQLite-to-CSV handoffs under an explicit contract. A comparison reveals which buckets changed while keeping the rows on the source machines. [Research and alternatives](docs/market-research.md)
+SQLite's `sqldiff` is useful when both databases are available and you want exact changes. `dbhash` can independently fingerprint SQLite databases. RowReceipt is for separated capture and comparison, including SQLite-to-CSV handoffs under an explicit contract. A comparison reveals which buckets changed while keeping the rows on the source machines. [sqldiff](https://www.sqlite.org/sqldiff.html) · [dbhash](https://www.sqlite.org/dbhash.html)
 
 ## Try it in under a minute
 
@@ -58,4 +58,4 @@ In a five-run Linux benchmark, a 1,000,000-row SQLite capture took 8.35 s median
 
 Version 0.1 reads one ordinary SQLite table or one UTF-8 CSV per capture. It checks the selected fields at the captured snapshot. Operators manage version alignment and handle diagnosis of changed buckets. Each authorized key holder can create a valid receipt. Receipts expose dataset counts, equality and bucket changes, so handle them as sensitive metadata. They contain no raw row values or primary key values.
 
-Read the [architecture](docs/architecture.md), [protocol](docs/protocol.md), [Python API](docs/api.md), [benchmark results](docs/benchmarks.md) or [roadmap](ROADMAP.md). Contributions are welcome, especially real migration cases represented with a small synthetic fixture. [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Apache-2.0](LICENSE)
+Read the [architecture](docs/architecture.md), [protocol](docs/protocol.md), [Python API](docs/api.md) or [benchmark results](docs/benchmarks.md). Contributions are welcome, especially real migration cases represented with a small synthetic fixture. [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Apache-2.0](LICENSE)
